@@ -9,57 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Yeti Run</title>
-    <style>
-        .header {
-            position: fixed; /* Fixa a navbar no topo */
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 100; /* Garante que a navbar fique acima de outros elementos */
-            background-color: #2196f3; /* Cor de fundo da navbar */
-            display: flex;
-            justify-content: space-between; /* Espaça a logo e os links */
-            align-items: center;
-            padding: 10px 25px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: flex-end; /* Alinha os links à direita */
-            align-items: center;
-            gap: 20px; /* Espaçamento entre os links */
-        }
-
-        .navbar img {
-            height: 50px; /* Ajuste o tamanho da logo */
-            width: auto;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #e8f5ff;
-            font-size: 20px;
-            font-weight: 500;
-        }
-
-        .navbar a:hover {
-            transform: scale(1.2);
-            color: #9acef8;
-        }
-
-        .Sobre {
-            background-color: #001958; /* Define o fundo da seção Sobre */
-            color: #fff; /* Ajusta a cor do texto para contraste */
-            padding: 20px; /* Adiciona espaçamento interno */
-        }
-    </style>
 </head>
-
 <body>
     <header class="header">
         <div class="logo">
@@ -80,7 +30,7 @@
             <p>Um jogo de aventura emocionante onde você controla um Yeti que esta tentando chegar em sua casa mas alguns obstaculos estão impedindo, tente chegar em seu iglu ileso.</p>
         </div>
     </section>
-    <section class="Sobre" id="sobre">
+    <section class="sobre" id="sobre">
         <div class="Sobre-text">
             <h1>Sobre o Jogo</h1>
             <p>
@@ -92,9 +42,34 @@
                 Use as setas do teclado para pular se mover e desviar  dos obstáculos e dos fantasmas, e tente chegar o mais longe possível, mas vá com cuidado os desafios vão aumentando progressivamente.
                 <br>
                 <img src="./img/teclas.png" alt="Teclas do teclado" style="margin-top: 10px; width: 200px; height: auto;">
+                
             </p>
         </div>
-    </section>          
+    </section>
+    <section class="galeria" id="galeria">
+        <h1>Galeria</h1>
+        <div class="galeria-imagens">
+           <img src="img/telamenu.png">
+           <img src="img/telajogo.png">
+           <img src="img/Captura de tela 2025-04-09 205646.png">
+        </div>   
+    </section> 
+    <section class="contato" id="contato">
+        <form action="">
+            <h1>Contato</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>      
         
 </body>
 
