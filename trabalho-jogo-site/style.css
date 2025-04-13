@@ -5,7 +5,8 @@
         }
         html{
             scroll-behavior: smooth; /* Suaviza o scroll para âncoras */
-        }
+        }          
+          
         .header {
             position: fixed; /* Fixa a navbar no topo */
             top: 0;
@@ -180,4 +181,3 @@
             font-size: 16px; /* Tamanho da fonte do rótulo */
             color: #fff; /* Cor do texto do rótulo */
      }
-        
