@@ -6,7 +6,7 @@
         html{
             scroll-behavior: smooth; /* Suaviza o scroll para âncoras */
         }          
-          
+
         .header {
             position: fixed; /* Fixa a navbar no topo */
             top: 0;
@@ -181,3 +181,39 @@
             font-size: 16px; /* Tamanho da fonte do rótulo */
             color: #fff; /* Cor do texto do rótulo */
      }
+
+     @media screen and (max-width: 768px) {
+        .header {
+            flex-direction: column; /* Alinha os itens em coluna em telas menores */
+            align-items: flex-start; /* Alinha os itens à esquerda */
+        }
+
+        .navbar {
+            flex-direction: column; /* Alinha os links em coluna */
+            gap: 10px; /* Espaçamento reduzido entre os links */
+        }
+
+        .home-text h1 {
+            font-size: 30px; /* Tamanho da fonte reduzido em telas menores */
+        }
+
+        .galeria-imagens img {
+            width: 100%; /* Imagens ocupam toda a largura disponível */
+            height: auto; /* Mantém a proporção das imagens */
+        }
+        
+     }
+        @media screen and (max-width: 480px) {
+            .header {
+                padding: 10px; /* Ajusta o padding para telas menores */
+            }
+    
+            .navbar a {
+                font-size: 16px; /* Tamanho da fonte reduzido em telas menores */
+                padding: 8px 12px; /* Ajusta o espaçamento interno dos links */
+            }
+    
+            .home-text h1 {
+                font-size: 25px; /* Tamanho da fonte reduzido em telas menores */
+            }
+        }
